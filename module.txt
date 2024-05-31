@@ -1,7 +1,4 @@
-while true do
-    print("feather on top")
-    wait(1)
-end
+
 
 -- FEATHER CUSTOME FUNCTIONS
 local oldstring = loadstring
@@ -1046,7 +1043,14 @@ for i, v in pairs(Descendants(funcs)) do
  if not getgenv()[i] then Count = Count + 1 end
  local Result = SafeOverride(i, v)
  local str = Result == 1 and ('%s %s already exists.'):format(type(v), i) or Result == 2 and ("Added %s %s to the global environment. (%d/%d)"):format(type(v), i, Count, Total) or Result ~= 1 and Result ~= 2 and ("Unknown result for function %s."):format(type(v), i)
- 
 end
 funcs.syn.protect_gui(DrawingDict)
 funcs.syn.protect_gui(ClipboardUI)
+local count = 0
+while count < 100 do
+    print("feather on top")
+    
+    count = count + 1
+    
+    wait(1)
+end
