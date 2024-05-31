@@ -245,8 +245,8 @@ funcs.deepclone = function(a)
  return Result
 end
 getgenv = getgenv or getfenv(2)
-if getgenv().MoreUNC then return end
-getgenv().MoreUNC = true
+if getgenv().niga then return end
+getgenv().niga = true
 function SafeOverride(a, b, c) --[[ Index, Data, Should override ]]
  if getgenv()[a] and not c then return 1 end
  getgenv()[a] = b
@@ -666,9 +666,7 @@ funcs.syn.crypto = funcs.crypt
 funcs.syn_backup = funcs.syn
 
 
-funcs.getexecutorname = function()
- return 'MoreUNC', '1'
-end
+
 funcs.identifyexecutor = funcs.getexecutorname
 funcs.http_request = getgenv().request or funcs.request
 funcs.getscripts = function()
