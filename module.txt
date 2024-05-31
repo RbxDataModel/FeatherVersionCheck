@@ -667,7 +667,6 @@ funcs.syn_backup = funcs.syn
 
 
 
-funcs.identifyexecutor = funcs.getexecutorname
 funcs.http_request = getgenv().request or funcs.request
 funcs.getscripts = function()
  local a = {};for i, v in pairs(game:GetDescendants()) do if v:IsA("LocalScript") or v:IsA("ModuleScript") then table.insert(a, v) end end return a
