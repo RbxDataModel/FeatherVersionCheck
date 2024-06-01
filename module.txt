@@ -451,9 +451,8 @@ funcs.getrunningscripts = function()
  return scripts
 end
 
--
 
-funcs.randomstring = funcs.crypt.random
+
 funcs.getprotecteduis = function()
  return protecteduis
 end
