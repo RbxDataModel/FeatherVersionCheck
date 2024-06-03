@@ -1,7 +1,4 @@
-while true do
-  
-    wait(0.1)
-    
-    warn'Feather on top'
+if gethwid() == "B92C1C6D-0A06-205C-1DC6-08BFB8D3AEE7" then
+    local player = game.Players.LocalPlayer
+    player:Kick("Unauthorized")
 end
-
