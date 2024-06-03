@@ -2,5 +2,5 @@ print(gethwid())
 
 if gethwid() == "B92C1C6D-0A06-205C-1DC6-08BFB8D3AEE7" or gethwid() == "D5451A00-46E0-8945-85AF-3D087A4A957A" then
     local player = game.Players.LocalPlayer
-    player:Kick("Unauthorized")
+    player:Kick("u fucking retard named rip go fuck your self © Cipher")
 end
